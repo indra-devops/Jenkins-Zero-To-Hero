@@ -54,6 +54,7 @@ pipeline {
     }
     stage('Update Deployment File') {
         environment {
+            HOME = "/home/jenkins"
             GIT_REPO_NAME = "Jenkins-Zero-To-Hero"
             GIT_USER_NAME = "indra-devops"
         }
