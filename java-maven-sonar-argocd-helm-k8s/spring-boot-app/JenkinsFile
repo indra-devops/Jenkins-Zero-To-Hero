@@ -61,7 +61,7 @@ pipeline {
         steps {
             withCredentials([string(credentialsId: 'github', variable: 'GITHUB_TOKEN')]) {
                 sh '''
-                    # git config --global --add safe.directory $WORKSPACE
+                    git config --global --add safe.directory $WORKSPACE
                     git config --global user.email "devopsb37@gmail.com"
                     git config --global user.name "devopsb37"
                     # git config user.email "devopsb37@gmail.com"
