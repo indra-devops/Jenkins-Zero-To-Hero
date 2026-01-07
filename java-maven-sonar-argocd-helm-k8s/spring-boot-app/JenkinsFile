@@ -10,7 +10,6 @@ pipeline {
   stages {
     stage('Checkout') {
       steps {
-        cleanWs()
         sh 'echo passed'
         // git branch: 'main', url: 'https://github.com/indra-devops/Jenkins-Zero-To-Hero.git'
         // sh 'git config --global --add safe.directory $WORKSPACE'
