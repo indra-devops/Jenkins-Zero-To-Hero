@@ -7,7 +7,7 @@ pipeline {
       alwaysPull true
       // args '--user root -v /var/run/docker.sock:/var/run/docker.sock' // mount Docker socket to access the host's Docker daemon
       args '-v /var/run/docker.sock:/var/run/docker.sock'
-      args '-u 110:110'   // Force Docker to run as Jenkins UID/GID
+      // args '-u 110:110'   // Force Docker to run as Jenkins UID/GID
     }
   }
   stages {
